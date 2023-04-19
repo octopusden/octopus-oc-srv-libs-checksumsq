@@ -34,7 +34,7 @@ MINOR=2
 RELEASE=0
 
 
-setup(name='cdt_checksumsq',
+setup(name='oc_checksumsq',
       version=dynamic_version( '.'.join( map( lambda x: str(x), [MAJOR, MINOR, RELEASE] ) ) ),
       description="Client for CDT checksums queue",
       long_description="",
