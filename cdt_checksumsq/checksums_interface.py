@@ -20,7 +20,7 @@ class ChecksumsQueueClient(QueueRPC):
     def basic_args(self, parser = None):
         parser = super(ChecksumsQueueClient, self).basic_args(parser)
         parser.add_argument('--queue-cnt', help = 'cdtcontents queue name', default = getenv('AMQP_CNT_QUEUE', queue_cnt_name))
-        # SII-13216 Overriding default exchange value for message duplication support
+        # Overriding default exchange value for message duplication support
         parser.set_defaults(exchange='cdt.dlartifacts.input')
         return parser
 
@@ -44,7 +44,7 @@ class ChecksumsQueueClient(QueueRPC):
         return usual
 
 
-# A.Knyazev, SII-10060: 'artifact_deliverable' default value has been changed to 'None' 
+# 'artifact_deliverable' default value has been changed to 'None' 
 #   otherwise we may occasionly enable forbidden distributive
 
 class ChecksumsQueueServer(QueueApplication):

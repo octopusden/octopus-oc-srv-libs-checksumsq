@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7
+#!/usr/bin/env python3
 
 import argparse
 from cdt_checksumsq.checksums_interface import ChecksumsQueueClient
@@ -16,7 +16,7 @@ parser.add_argument('--loctype', help='Location type, default: NXS', default='NX
 parser.add_argument('--revision', help='SVN revision', default=None)
 parser.add_argument('--depth', type=int, help='File registration depth, default: 0', default=0)
 
-#A.Knyazev, SII-10060: these two parameters added for possibility to register in Mongo correctly with 
+#these two parameters added for possibility to register in Mongo correctly with 
 # deploying deny/allow mechanism
 parser.add_argument('--parent', help='Parent list: JSON-parsable string', default=None)
 parser.add_argument('--artifact-deliverable', help="Delivery enabled", default=None)
