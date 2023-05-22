@@ -1,5 +1,5 @@
 import unittest
-from cdt_checksumsq.checksums_interface import ChecksumsQueueClient
+from ..checksums_interface import ChecksumsQueueClient
 from oc_cdt_queue2.test.synchron.mocks.queue_loopback import LoopbackConnection
 from argparse import ArgumentParser
 
