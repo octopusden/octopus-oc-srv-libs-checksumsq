@@ -1,7 +1,7 @@
 from setuptools import setup
 
 included_packages = ['oc_checksumsq']
-__version = "10.2.1"
+__version = "10.2.2"
 
 spec = {
         "name": 'oc-checksumsq',
@@ -13,8 +13,7 @@ spec = {
             "oc-cdt-queue2 >= 4.0.3",
             "requests"],
         "packages": included_packages,
-        "scripts":["chkreg.py"],
-        #"python_requires": ">= 3.6"
+        "scripts":["chkreg.py"]
 }
 
 setup(**spec)
