@@ -1,7 +1,7 @@
 from setuptools import setup
 
 included_packages = ['oc_checksumsq']
-__version = "10.2.1"
+__version = "10.2.3"
 
 spec = {
         "name": 'oc-checksumsq',
@@ -14,7 +14,7 @@ spec = {
             "requests"],
         "packages": included_packages,
         "scripts":["chkreg.py"],
-        #"python_requires": ">= 3.6"
+        "python_requires": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*"
 }
 
 setup(**spec)
