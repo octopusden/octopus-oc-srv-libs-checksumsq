@@ -13,7 +13,8 @@ spec = {
             "oc-cdt-queue2 >= 4.0.3",
             "requests"],
         "packages": included_packages,
-        "scripts":["chkreg.py"]
+        "scripts":["chkreg.py"],
+        "python_requires": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*"
 }
 
 setup(**spec)
