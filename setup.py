@@ -1,7 +1,7 @@
 from setuptools import setup
 
 included_packages = ['oc_checksumsq']
-__version = "10.2.2"
+__version = "10.2.3"
 
 spec = {
         "name": 'oc-checksumsq',
